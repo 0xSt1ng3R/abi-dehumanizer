@@ -13,13 +13,13 @@ pip install abi_dehumanizer
 ## Usage
 
 ```python
->>> from abi_dehumanizer import ABIParser
->>> ABIParser("deposit((address,uint256,uint256,uint256,(address,address,bool,uint256)[]),address[],uint256[])").parse_parameters()
+>>> from abi_dehumanizer import ABIDehumanizer
+>>> ABIDehumanizer("deposit((address,uint256,uint256,uint256,(address,address,bool,uint256)[]),address[],uint256[])").parse_parameters()
 ['(address,uint256,uint256,uint256,(address,address,bool,uint256)[])', 'address[]', 'uint256[]']
 >>> 
->>> ABIParser("claim(address,address,uint256,uint256,bytes32[])").parse_parameters()
+>>> ABIDehumanizer("claim(address,address,uint256,uint256,bytes32[])").parse_parameters()
 ['address', 'address', 'uint256', 'uint256', 'bytes32[]']
 >>> 
->>> ABIParser("transfer(address,uint256)").parse_parameters()
+>>> ABIDehumanizer("transfer(address,uint256)").parse_parameters()
 ['address', 'uint256']
 ```

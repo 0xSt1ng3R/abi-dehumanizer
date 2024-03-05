@@ -45,7 +45,7 @@ class ABILexer:
             self.current_position += 1
         return self.abi_string[start_position:self.current_position]
 
-class ABIParser:
+class ABIDehumanizer:
     """
     A parser for transforming human-readable ABI strings into a format compatible with eth_abi.decode().
     """
