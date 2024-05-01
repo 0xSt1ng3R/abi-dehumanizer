@@ -1,4 +1,4 @@
-# Human-Readable ABI String Convertor To eth_abi Compatible List
+# Human-Readable ABI String Convertor To eth_abi Compatible Object
 
 This repository contains Python classes designed for parsing human-readable ABI strings into a format that can be easily used with the `eth_abi.decode()` function.
 
